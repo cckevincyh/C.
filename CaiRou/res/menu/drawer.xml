@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- 资讯的界面 -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            
+            
+            android:title="返回主页" />
+       
+       
+    </group>
+
+    <item android:title="资讯列表">
+        <menu>
+            <item
+                
+                android:title="科技新闻" />
+            <item
+               
+                android:title="苹果新闻 "/>
+            <item
+                
+                android:title="频道新闻" />
+             <item
+                
+                android:title="微信精选" />
+              <item
+                
+                android:title="微信热门精选" />
+             
+        </menu>
+    </item>
+
+</menu>

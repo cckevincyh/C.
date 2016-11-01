@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/blue"
+    android:layout_height="50dp">
+
+    <!--<Button-->
+        <!--android:id="@+id/left_button"-->
+        <!--android:layout_width="@dimen/button_width"-->
+        <!--android:layout_height="@dimen/button_height"-->
+        <!--android:text="@string/button"-->
+        <!--android:textSize="@dimen/button_textSize"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:background="@drawable/button_selector"-->
+        <!--/>-->
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Memo"
+        android:textColor="@color/colorWhite"
+        android:textSize="28sp"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <!--<Button-->
+        <!--android:id="@+id/right_button"-->
+        <!--android:layout_width="@dimen/button_width"-->
+        <!--android:layout_height="@dimen/button_height"-->
+        <!--android:text="@string/button"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:textSize="@dimen/button_textSize"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:background="@drawable/button_selector"-->
+        <!--/>-->
+</LinearLayout>
