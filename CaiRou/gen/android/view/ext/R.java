@@ -30,8 +30,8 @@ public final class R {
 		public static final int sat_main = 0x7f02007b;
 	}
 	public static final class id {
-		public static final int sat_item = 0x7f0a00ac;
-		public static final int sat_main = 0x7f0a00ad;
+		public static final int sat_item = 0x7f0a00ad;
+		public static final int sat_main = 0x7f0a00ae;
 	}
 	public static final class layout {
 		public static final int sat_item_cr = 0x7f04003e;

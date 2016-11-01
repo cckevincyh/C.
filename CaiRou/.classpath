@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="libs/nineoldandroids-2.4.0.jar"/>
 	<classpathentry kind="lib" path="libs/picasso-2.5.2.jar"/>
 	<classpathentry kind="lib" path="libs/sdlv.jar"/>
+	<classpathentry kind="lib" path="libs/gson-2.5.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
