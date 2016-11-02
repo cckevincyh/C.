@@ -17,4 +17,12 @@
      <dimen name="user_profile_avatar_size">88dp</dimen>
     <dimen name="global_menu_avatar_size">64dp</dimen>
     <dimen name="default_elevation">8dp</dimen>
+    
+    
+     <dimen name="slv_item_height">48dip</dimen>
+
+    <dimen name="slv_item_bg_btn_width">48dip</dimen>
+    <dimen name="slv_item_bg_btn_width_img">100dip</dimen>
+
+    <dimen name="txt_size">18sp</dimen>
 </resources>

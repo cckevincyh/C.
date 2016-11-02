@@ -26,4 +26,7 @@
     <color name="fab_color_shadow">#44000000</color>
     <color name="text_like_counter">#2b5a83</color>
     <color name="paint_color">#dddddd</color>
+    
+    
+    <color name="blue">#1E88E5</color>
 </resources>
