@@ -6,4 +6,116 @@
     <string name="action_settings">Settings</string>
 	<string name="open">open</string>
 	<string name="close">close</string>
+	
+	
+	
+	
+    <string name="channel_id">baidu_news</string>
+    <string name="ns_appkey">2x1kfBk63z</string>
+    <string name="version_build_num">更新序号：Build 262</string>
+    <string name="versionnum">V3.4.1</string>
+    <string name="copyright">Copyright © 2013 NetEase Inc. All Rights Reserved</string>
+    <string name="application_name_CHN">网易新闻</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="net_err">网络不给力</string>
+    <string name="post">提交</string>
+    <string name="wait">请稍侯…</string>
+    <string name="exit_tips">再按一次退出网易新闻</string>
+    <string name="offline_title">离线较消耗较多流量</string>
+    <string name="offline_tips">当前为3G/2G网络，确定要继续离线吗？</string>
+    <string name="offline_cancel">算了</string>
+    <string name="offline_goon">好的，继续</string>
+  
+    <string name="base_pull_list_refreshing">正在刷新…</string>
+    <string name="base_load_err">加载失败</string>
+    <string name="base_loading">正在加载…</string>
+    <string name="base_load_more">显示下%d条</string>
+    <string name="base_loading_more">%d条载入中…</string>
+    <string name="base_loading_more_net_err_retry">网络错误,点击重试</string>
+    <string name="base_load_err_retry">加载失败,点击重试</string>
+    <string name="biz_ad_update">立即升级</string>
+    <string name="biz_ad_install">立即安装</string>
+    <string name="biz_ad_no_tip">不再提示</string>
+    <string name="biz_ad_start">立即体验</string>
+    <string name="biz_version_update_title">升级网易新闻客户端</string>
+    <string name="biz_version_update_do">立刻升级</string>
+    <string name="biz_version_update_cancel">暂不升级</string>
+    <string name="biz_sns_err_msg_rebind">请重新绑定帐号</string>
+   
+   
+    <string name="biz_plugin_weather_ip_query_failed">未找到此城市,请重新定位或选择…</string>
+    <string name="location_query_failed_title">定位失败</string>
+    <string name="location_query_failed">是否手动选择城市?</string>
+    <string name="biz_plugin_weather_ip_query_city">请先选择城市或定位！</string>
+    <string name="biz_plugin_weather_ip_querying">正在定位…</string>
+    <string name="biz_plugin_weather_search_city_hint">搜索全国城市(中文/拼音)</string>
+    <string name="biz_plugin_weather_current_city">当前选择的城市-</string>
+    <string name="biz_plugin_weather_frequent_city">经常选择的城市</string>
+    <string name="biz_plugin_weather_update_time_format">%s同步</string>
+    <string name="biz_plugin_weather_running">同步中…</string>
+    <string name="biz_plugin_weather_none">未同步</string>
+    <string name="biz_plugin_weather_actionbar_title">%s天气</string>
+    <string name="biz_plugin_weather_no_data_tip">无法获取天气信息</string>
+     <string name="biz_plugin_pm2_5_no_data_tip">无法获取pm2.5信息</string>
+    <string name="biz_plugin_weather_humidity">湿度:%s</string>
+    <string name="biz_plugin_weather_selectcity_title">选择城市</string>
+    <string name="biz_plugin_weather_default_city">北京</string>
+    <string name="biz_plugin_searchnews_title">搜索新闻</string>
+    <string name="biz_plugin_searchnews_search_no_data">无符合“%s”的内容</string>
+    <string name="biz_plugin_searchnews_msg_net_error">网络连接错误</string>
+    <string name="biz_plugin_searchnews_search_invalid">请输入有效的关键字</string>
+    <string name="biz_plugin_searchnews_news_search_tips">请输入关键字…</string>
+    <string name="biz_news_detailpage_video_net_category_title">系统提示</string>
+    <string name="get_weather_error">页面没有找到</string>
+    <string name="get_pm2_5_error">error</string>
+    <string name="biz_news_detailpage_video_net_category_tip">您正在使用3G/2G网络，观看视频将会产生较大资费，确定要继续观看吗？</string>
+
+    <string name="biz_news_column_edit_complete">完成</string>
+    <string name="biz_news_column_edit_delete">删除(%d)</string>
+    <string name="biz_news_column_tag_new">NEW</string>
+    <string name="biz_news_column_tag_hot">HOT</string>
+    <string name="biz_ad_flowremind_tipcontent">Welcome to NetEase News client software, the client to use a completely free, the discharge fee, traffic fee please consult the local operator, whether to allow to establish a connection?</string>
+    <string name="biz_ad_flowremind_ok">OK</string>
+    <string name="biz_ad_flowremind_exit">Exit</string>
+    <string name="biz_ad_flowremind_noask">No ask</string>
+    <string name="biz_ad_flowremind_title">The system prompts</string>
+    <string name="biz_news_list_photoset_tag">图集</string>
+ 
+    <string name="biz_account_login_success">登录成功</string>
+    <string name="biz_account_login_failed_unavailable">当前网络不可用!</string>
+    <string name="biz_account_login_failed_network">登录失败:网络异常或超时!</string>
+    <string name="biz_account_login_failed_user_pass">登录失败:请输入正确的用户名和密码!</string>
+    <string name="biz_account_login_mail_tip">目前只支持网易163、126、188、yeah邮箱</string>
+    <string name="biz_msg_list_title">消息列表</string>
+    <string name="biz_tie_rank_top_title">精彩跟贴</string>
+    <string name="biz_tie_rank_today_top_title">今日排行</string>
+    <string name="biz_tie_support_comment">顶[%d]</string>
+
+    <string name="biz_widget_4_2">简洁天气4x2</string>
+    <string name="biz_widget_4_3">网易新闻4x3</string>
+    <string name="biz_widget_4_4">网易新闻4x4</string>
+    <string name="biz_widget_loadding">正在加载新闻内容...</string>
+    <string name="biz_font_author">由%s提供</string>
+    <string name="base_config_flow">nr_gone</string>
+    <string name="base_config_update">visible</string>
+    <string name="base_config_push">visible</string>
+    <string name="base_config_ad">visible</string>
+    <string name="base_config_app_recommend">visible</string>
+    <string name="base_config_yiliao">nr_gone</string>
+    <string name="feedback_edittext_hint">请输入反馈，我们将为您不断改进</string>
+    <string name="feedback_email_hint">选填，便于我们给您反馈</string>
+    <string name="new_feedback">新建反馈</string>
+    <string name="feedback_content">反馈内容</string>
+    <string name="feedback_del">删除反馈</string>
+
+    <string name="base_plugin_localweather">本地天气</string>
+
+    <string name="base_plugin_setting">设置</string>
+    <string name="base_plugin_app_recommend">应用推荐</string>
+    <string name="actionbar_activity_not_found">Failed to open intent...</string>
+    <string name="one">one_fragment</string>
+    <string name="two">two_fragment</string>
+    <string name="app_widget_no_weather">N/A\nN/A</string>
+	
 </resources>

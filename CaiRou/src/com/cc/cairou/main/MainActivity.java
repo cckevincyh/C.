@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.cc.cairou.R;
 import com.mxn.soul.flowingdrawer_core.FlowingView;
 import com.mxn.soul.flowingdrawer_core.LeftDrawerLayout;
+import com.way.app.Application;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -43,8 +44,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
-     
+      
         
         
         //设置ToolBar

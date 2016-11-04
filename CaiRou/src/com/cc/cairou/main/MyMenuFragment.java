@@ -20,6 +20,7 @@ import com.cc.cairou.notes.aty.AtyList;
 import com.mxn.soul.flowingdrawer_core.LeftDrawerLayout;
 import com.mxn.soul.flowingdrawer_core.MenuFragment;
 import com.squareup.picasso.Picasso;
+import com.way.weather.WeatherActivity;
 
 
 //左侧的列表
@@ -64,6 +65,11 @@ public class MyMenuFragment extends MenuFragment {
 				case "资讯":
 					Intent intent3 = new Intent(getActivity(), NewsActivity.class);
 					startActivity(intent3);
+					MainActivity.handler.sendEmptyMessage(1);//通知关闭左侧栏
+					break;
+				case "天气":
+					Intent intent4 = new Intent(getActivity(), WeatherActivity.class);
+					startActivity(intent4);
 					MainActivity.handler.sendEmptyMessage(1);//通知关闭左侧栏
 					break;
 				default:

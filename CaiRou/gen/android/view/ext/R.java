@@ -8,14 +8,14 @@ package android.view.ext;
 
 public final class R {
 	public static final class anim {
-		public static final int sat_item_anim_click = 0x7f05001a;
-		public static final int sat_item_anticipate_interpolator = 0x7f05001b;
-		public static final int sat_item_click_interpolator = 0x7f05001c;
-		public static final int sat_item_in_rotate_interpolator = 0x7f05001d;
-		public static final int sat_item_out_rotate_interpolator = 0x7f05001e;
-		public static final int sat_item_overshoot_interpolator = 0x7f05001f;
-		public static final int sat_main_rotate_left = 0x7f050020;
-		public static final int sat_main_rotate_right = 0x7f050021;
+		public static final int sat_item_anim_click = 0x7f05001c;
+		public static final int sat_item_anticipate_interpolator = 0x7f05001d;
+		public static final int sat_item_click_interpolator = 0x7f05001e;
+		public static final int sat_item_in_rotate_interpolator = 0x7f05001f;
+		public static final int sat_item_out_rotate_interpolator = 0x7f050020;
+		public static final int sat_item_overshoot_interpolator = 0x7f050021;
+		public static final int sat_main_rotate_left = 0x7f050022;
+		public static final int sat_main_rotate_right = 0x7f050023;
 	}
 	public static final class attr {
 		public static final int closeOnClick = 0x7f01000c;
@@ -25,20 +25,20 @@ public final class R {
 		public static final int totalSpacingDegree = 0x7f01000d;
 	}
 	public static final class drawable {
-		public static final int ic_launcher = 0x7f02007b;
-		public static final int sat_item = 0x7f02008b;
-		public static final int sat_main = 0x7f02008c;
+		public static final int ic_launcher = 0x7f0200bd;
+		public static final int sat_item = 0x7f0200de;
+		public static final int sat_main = 0x7f0200df;
 	}
 	public static final class id {
-		public static final int sat_item = 0x7f0a00c4;
-		public static final int sat_main = 0x7f0a00c5;
+		public static final int sat_item = 0x7f0b0102;
+		public static final int sat_main = 0x7f0b0103;
 	}
 	public static final class layout {
-		public static final int sat_item_cr = 0x7f040045;
-		public static final int sat_main = 0x7f040046;
+		public static final int sat_item_cr = 0x7f040055;
+		public static final int sat_main = 0x7f040056;
 	}
 	public static final class string {
-		public static final int empty = 0x7f090000;
+		public static final int empty = 0x7f0a0000;
 	}
 	public static final class styleable {
 		public static final int[] SatelliteMenu = { 0x7f01000b, 0x7f01000c, 0x7f01000d, 0x7f01000e, 0x7f01000f };

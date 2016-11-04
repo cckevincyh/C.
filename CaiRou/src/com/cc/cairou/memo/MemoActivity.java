@@ -181,6 +181,8 @@ public class MemoActivity extends ActionBarActivity {
                                 //更新typeArray文件和typeItemArrayList文件
                                 save(gson.toJson(typeArray), typeArrayFileName);//保存左侧数据
                                 save(gson.toJson(typeItemArrayList), typeItemListFileName);//保存右侧数据
+                                //隐藏左侧
+                                mDrawerLayout.closeDrawers();
                             }
                         }
                     });
