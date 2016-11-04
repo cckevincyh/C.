@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="2dp"
+    android:background="#f7f7f7"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            
+            <com.gc.materialdesign.views.LayoutRipple
+            	android:id="@+id/itemButtons"
+            	android:layout_width="0dp"
+            	android:layout_weight="1"
+            	android:layout_height="match_parent"
+            	android:clickable="true" >
+            	
+            	<TextView
+                android:id="@+id/list_item_tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="hello world" />
+            </com.gc.materialdesign.views.LayoutRipple>
+
+            
+        	
+
+           
+                <TextView
+                android:id="@+id/list_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="5fenzhongqian" />
+
+            	<ImageView
+                android:id="@+id/list_item_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                 />
+        </LinearLayout>
+        
+        
+   
+
+        
+</LinearLayout>
