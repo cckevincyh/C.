@@ -1,5 +1,6 @@
 package com.cc.cairou.main;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -11,16 +12,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.text.TextUtils;
 
 import android.view.MenuItem;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.Toast;
 
 
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.LocationClient;
 import com.cc.cairou.R;
 import com.mxn.soul.flowingdrawer_core.FlowingView;
 import com.mxn.soul.flowingdrawer_core.LeftDrawerLayout;
 import com.way.app.Application;
+import com.way.util.IphoneDialog;
+import com.way.weather.WeatherActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -45,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
       
-        
+    
         
         //设置ToolBar
         setupToolbar();
@@ -72,6 +81,19 @@ public class MainActivity extends AppCompatActivity {
       
     }
 
+    BDLocationListener mLocationListener = new BDLocationListener() {
+
+		@Override
+		public void onReceivePoi(BDLocation arg0) {
+			// do nothing
+		}
+
+		@Override
+		public void onReceiveLocation(BDLocation location) {
+		
+		}
+	};
+    
 
     protected void setupToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

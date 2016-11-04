@@ -56,7 +56,7 @@ public class WeatherActivity extends FragmentActivity implements
 		Application.EventHandler, OnClickListener {
 	public static final String UPDATE_WIDGET_WEATHER_ACTION = "com.way.action.update_weather";
 	public static final String WEATHER_URL = "https://api.heweather.com/x3/weather?cityid=";
-	public static final String KEY = "&key=????????????????????????";//和风天气的key
+	public static final String KEY = "&key=??????????????????/";//key
 	private static final String WEATHER_INFO_FILENAME = "_weather.json";
 	private static final String SIMPLE_WEATHER_INFO_FILENAME = "_simple_weather.json";
 	private static final String PM2D5_INFO_FILENAME = "_pm2d5.json";
