@@ -16,21 +16,13 @@
             android:id="@+id/menu_popular"
             android:icon="@drawable/ic_global_menu_popular"
             android:title="天气" />
+       </group>
+       <group android:id="@+id/menu_group_2">
         <item
             android:id="@+id/menu_photos_nearby"
             android:icon="@drawable/ic_global_menu_nearby"
-            android:title="资讯" />
-        <item
-            android:id="@+id/menu_photo_you_liked"
-            android:icon="@drawable/ic_global_menu_likes"
-            android:title="脑筋急转弯" />
-    </group>
-    <group android:id="@+id/menu_group_2">
-        <item
-            android:id="@+id/menu_settings"
-            android:title="设置" />
-        <item
-            android:id="@+id/menu_about"
             android:title="关于" />
+
     </group>
+
 </menu>

@@ -68,27 +68,29 @@ public class FirstWeatherFragment extends Fragment {
 	public void updateWeather(WeatherInfoBean weatherinfo) {
 		if (weatherinfo != null) {
 			List<DailyForecastBean> daily_forecast = weatherinfo.getHeWeatherdataservice().get(0).getDaily_forecast();
-			weather_imgIv1.setImageResource(Application.getInstance()
-					.getWeatherIcon(daily_forecast.get(1).getCond().getTxt_d()));
-			weather_imgIv2.setImageResource(Application.getInstance()
-					.getWeatherIcon(daily_forecast.get(2).getCond().getTxt_d()));
-			weather_imgIv3.setImageResource(Application.getInstance()
-					.getWeatherIcon(daily_forecast.get(3).getCond().getTxt_d()));
-			climateTv1.setText(daily_forecast.get(1).getCond().getTxt_d());
-			climateTv2.setText(daily_forecast.get(2).getCond().getTxt_d());
-			climateTv3.setText(daily_forecast.get(3).getCond().getTxt_d());
-
-
-			
-			
-			
-			temperatureTv1.setText(daily_forecast.get(1).getTmp().getMin()+"°~"+daily_forecast.get(1).getTmp().getMax()+"°");
-			temperatureTv2.setText(daily_forecast.get(2).getTmp().getMin()+"°~"+daily_forecast.get(2).getTmp().getMax()+"°");
-			temperatureTv3.setText(daily_forecast.get(3).getTmp().getMin()+"°~"+daily_forecast.get(3).getTmp().getMax()+"°");
-
-			windTv1.setText(daily_forecast.get(1).getWind().getDir()+" "+daily_forecast.get(1).getWind().getSc());
-			windTv2.setText(daily_forecast.get(2).getWind().getDir()+" "+daily_forecast.get(2).getWind().getSc());
-			windTv3.setText(daily_forecast.get(3).getWind().getDir()+" "+daily_forecast.get(3).getWind().getSc());
+			if(daily_forecast!=null && daily_forecast.size()>=4){
+				weather_imgIv1.setImageResource(Application.getInstance()
+						.getWeatherIcon(daily_forecast.get(1).getCond().getTxt_d()));
+				weather_imgIv2.setImageResource(Application.getInstance()
+						.getWeatherIcon(daily_forecast.get(2).getCond().getTxt_d()));
+				weather_imgIv3.setImageResource(Application.getInstance()
+						.getWeatherIcon(daily_forecast.get(3).getCond().getTxt_d()));
+				climateTv1.setText(daily_forecast.get(1).getCond().getTxt_d());
+				climateTv2.setText(daily_forecast.get(2).getCond().getTxt_d());
+				climateTv3.setText(daily_forecast.get(3).getCond().getTxt_d());
+	
+	
+				
+				
+				
+				temperatureTv1.setText(daily_forecast.get(1).getTmp().getMin()+"°~"+daily_forecast.get(1).getTmp().getMax()+"°");
+				temperatureTv2.setText(daily_forecast.get(2).getTmp().getMin()+"°~"+daily_forecast.get(2).getTmp().getMax()+"°");
+				temperatureTv3.setText(daily_forecast.get(3).getTmp().getMin()+"°~"+daily_forecast.get(3).getTmp().getMax()+"°");
+	
+				windTv1.setText(daily_forecast.get(1).getWind().getDir()+" "+daily_forecast.get(1).getWind().getSc());
+				windTv2.setText(daily_forecast.get(2).getWind().getDir()+" "+daily_forecast.get(2).getWind().getSc());
+				windTv3.setText(daily_forecast.get(3).getWind().getDir()+" "+daily_forecast.get(3).getWind().getSc());
+			}
 		} else {
 			weather_imgIv1.setImageResource(R.drawable.na);
 			weather_imgIv2.setImageResource(R.drawable.na);

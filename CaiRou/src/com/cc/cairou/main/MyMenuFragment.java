@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.cc.cairou.R;
 import com.cc.cairou.memo.MemoActivity;
-import com.cc.cairou.news.NewsActivity;
 import com.cc.cairou.notes.aty.AtyList;
 import com.mxn.soul.flowingdrawer_core.LeftDrawerLayout;
 import com.mxn.soul.flowingdrawer_core.MenuFragment;
@@ -62,11 +61,7 @@ public class MyMenuFragment extends MenuFragment {
 					startActivity(intent2);
 					MainActivity.handler.sendEmptyMessage(1);//通知关闭左侧栏
 					break;
-				case "资讯":
-					Intent intent3 = new Intent(getActivity(), NewsActivity.class);
-					startActivity(intent3);
-					MainActivity.handler.sendEmptyMessage(1);//通知关闭左侧栏
-					break;
+					
 				case "天气":
 					Intent intent4 = new Intent(getActivity(), WeatherActivity.class);
 					startActivity(intent4);

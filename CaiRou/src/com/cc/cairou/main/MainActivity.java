@@ -1,5 +1,6 @@
 package com.cc.cairou.main;
 
+import tyrantgit.explosionfield.ExplosionField;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,8 +15,10 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
@@ -53,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-      
+       
     
         
         //设置ToolBar
@@ -75,8 +78,6 @@ public class MainActivity extends AppCompatActivity {
        
       
         
-        //设置中间的内容
-        setupFeed();
         
       
     }
@@ -109,20 +110,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //设置中间的内容。
-    private void setupFeed() {
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this) {
-            @Override
-            protected int getExtraLayoutSpace(RecyclerView.State state) {
-                return 300;
-            }
-        };
-        rvFeed.setLayoutManager(linearLayoutManager);
-
-        FeedAdapter feedAdapter = new FeedAdapter(this);
-        rvFeed.setAdapter(feedAdapter);
-        feedAdapter.updateItems();
-    }
+ 
 
     @Override
     public void onBackPressed() {
@@ -133,6 +121,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main,menu);
+        return true;
+    }
 
+    
 	
 }

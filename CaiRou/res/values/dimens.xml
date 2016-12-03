@@ -24,7 +24,7 @@
     <dimen name="slv_item_bg_btn_width">48dip</dimen>
     <dimen name="slv_item_bg_btn_width_img">100dip</dimen>
 
-    <dimen name="txt_size">18sp</dimen>
+    <dimen name="txt_size">6sp</dimen>
     
     
     

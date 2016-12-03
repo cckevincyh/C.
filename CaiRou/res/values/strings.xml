@@ -8,7 +8,7 @@
 	<string name="close">close</string>
 	
 	
-	
+	<string name="action_reset">Reset</string>
 	
     <string name="channel_id">baidu_news</string>
     <string name="ns_appkey">2x1kfBk63z</string>

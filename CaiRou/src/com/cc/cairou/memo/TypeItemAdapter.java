@@ -10,7 +10,6 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import com.cc.cairou.R;
-import com.cc.cairou.news.NewsActivity;
 
 /**
  * Created by Benson on 2015/12/11.

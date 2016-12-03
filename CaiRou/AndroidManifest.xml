@@ -39,7 +39,7 @@
         </activity>
         <activity android:name="com.cc.cairou.main.MainActivity"></activity>
         <activity android:name="com.cc.cairou.memo.MemoActivity"></activity>
-        <activity android:name="com.cc.cairou.news.NewsActivity"></activity>
+ 
         
            <activity android:name="com.cc.cairou.notes.aty.AtyList"
             android:launchMode="singleTop"></activity>
