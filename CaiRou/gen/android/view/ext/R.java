@@ -26,12 +26,12 @@ public final class R {
 	}
 	public static final class drawable {
 		public static final int ic_launcher = 0x7f0200bd;
-		public static final int sat_item = 0x7f0200e4;
-		public static final int sat_main = 0x7f0200e5;
+		public static final int sat_item = 0x7f0200fc;
+		public static final int sat_main = 0x7f0200fd;
 	}
 	public static final class id {
-		public static final int sat_item = 0x7f0b0100;
-		public static final int sat_main = 0x7f0b0101;
+		public static final int sat_item = 0x7f0b00fa;
+		public static final int sat_main = 0x7f0b00fb;
 	}
 	public static final class layout {
 		public static final int sat_item_cr = 0x7f040053;

@@ -36,10 +36,10 @@ import com.way.weather.WeatherActivity;
 
 
 public class MainActivity extends AppCompatActivity {
-
+	 private ExplosionField mExplosionField;
     private RecyclerView rvFeed;
     private static LeftDrawerLayout mLeftDrawerLayout;
-    
+   
     
     public static Handler handler = new Handler(){
     	@Override
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       
+        mExplosionField = ExplosionField.attach2Window(this);
     
         
         //设置ToolBar
@@ -77,10 +77,27 @@ public class MainActivity extends AppCompatActivity {
         mLeftDrawerLayout.setMenuFragment(mMenuFragment);
        
       
-        
+        setupFeed();
         
       
     }
+    
+    
+    private void setupFeed() {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this) {
+            @Override
+            protected int getExtraLayoutSpace(RecyclerView.State state) {
+                return 300;
+            }
+        };
+        rvFeed.setLayoutManager(linearLayoutManager);
+
+        FeedAdapter feedAdapter = new FeedAdapter(this,mExplosionField);
+        rvFeed.setAdapter(feedAdapter);
+        feedAdapter.updateItems();
+    }
+    
+    
 
     BDLocationListener mLocationListener = new BDLocationListener() {
 
@@ -129,6 +146,22 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.action_reset) {
+            reset();
+   
+            mExplosionField.clear();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void reset() {
+    	setupFeed();
+    }
 	
+    
+   
+
 }
