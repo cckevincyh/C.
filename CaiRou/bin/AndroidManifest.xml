@@ -23,6 +23,11 @@
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	 <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+	  <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+
+     <!-- 快捷方式权限 -->
+     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
     <application
          android:name="com.way.app.Application"
         android:icon="@drawable/ic_launcher"
@@ -37,10 +42,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.cc.cairou.main.MainActivity"></activity>
+        <activity android:name="com.cc.cairou.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
         <activity android:name="com.cc.cairou.memo.MemoActivity"></activity>
- 
         
+        
+        
+ <activity android:name="com.cc.cairou.main.MessageActivity">
+      <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+  </activity>
+  
            <activity android:name="com.cc.cairou.notes.aty.AtyList"
             android:launchMode="singleTop"></activity>
         <activity android:name="com.cc.cairou.notes.aty.AtyDetail"
@@ -88,7 +107,7 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/weather_widget_4x2" />
         </receiver>
-
+ <receiver android:name="com.cc.cairou.main.AlarmReceiver" android:process=":remote"></receiver>
         <service android:name="com.way.weather.WeatherUpdateService" >
         </service>
         <service

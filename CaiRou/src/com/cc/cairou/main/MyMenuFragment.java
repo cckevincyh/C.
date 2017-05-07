@@ -49,8 +49,11 @@ public class MyMenuFragment extends MenuFragment {
 			@Override
 			public boolean onNavigationItemSelected(MenuItem menuItem) {
 				String title = (String) menuItem.getTitle();
-				Toast.makeText(getActivity(), "您点击了 " + title, Toast.LENGTH_SHORT).show();
+				//Toast.makeText(getActivity(), "您点击了 " + title, Toast.LENGTH_SHORT).show();
 				switch (title) {
+				case "首页":
+					Toast.makeText(getActivity(), "这已经是首页了,你再点试试看?", Toast.LENGTH_SHORT).show();
+					break;
 				case "随手记":
 					Intent intent1 = new Intent(getActivity(), MemoActivity.class);
 					startActivity(intent1);
@@ -67,6 +70,10 @@ public class MyMenuFragment extends MenuFragment {
 					startActivity(intent4);
 					MainActivity.handler.sendEmptyMessage(1);//通知关闭左侧栏
 					break;
+				case "关于":
+					Toast.makeText(getActivity(), "这里没什么东西~", Toast.LENGTH_LONG).show();
+					MainActivity.handler.sendEmptyMessage(1);//通知关闭左侧栏
+					break;
 				default:
 					break;
 				}
@@ -81,11 +88,11 @@ public class MyMenuFragment extends MenuFragment {
 
 
     public void onOpenMenu(){
-        Toast.makeText(getActivity(),"onOpenMenu",Toast.LENGTH_SHORT).show();
+        //Toast.makeText(getActivity(),"onOpenMenu",Toast.LENGTH_SHORT).show();
         
     }
     public void onCloseMenu(){
-        Toast.makeText(getActivity(),"onCloseMenu",Toast.LENGTH_SHORT).show();
+     //   Toast.makeText(getActivity(),"onCloseMenu",Toast.LENGTH_SHORT).show();
     }
     
     

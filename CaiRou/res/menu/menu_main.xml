@@ -2,10 +2,19 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".MainActivity">
-    <item android:id="@+id/action_settings"
-          android:title="@string/action_settings"
-          android:orderInCategory="100"
-          app:showAsAction="never"/>
+   
        <item android:id="@+id/action_reset" android:title="@string/action_reset"
+        android:orderInCategory="100"  />
+       
+         <item android:id="@+id/action_type1" android:title="@string/action_type1"
+        android:orderInCategory="100"  />
+         
+         <item android:id="@+id/action_type2" android:title="@string/action_type2"
+        android:orderInCategory="100"  />
+         <item android:id="@+id/action_type4" android:title="@string/action_type4"
+        android:orderInCategory="100"  />
+      <item android:id="@+id/action_type3" android:title="@string/action_type3"
+        android:orderInCategory="100"  />
+      <item android:id="@+id/action_type5" android:title="@string/action_type5"
         android:orderInCategory="100"  />
 </menu>

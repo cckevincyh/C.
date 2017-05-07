@@ -53,6 +53,7 @@ public class BladeView extends View {
 		for (int i = 0; i < b.length; i++) {
 			paint.setColor(Color.parseColor("#ff2f2f2f"));
 			paint.setTypeface(Typeface.DEFAULT_BOLD);
+			paint.setTextSize(30);	//设置旁边首字母字体大小
 			paint.setFakeBoldText(true);
 			paint.setAntiAlias(true);
 			if (i == choose) {
@@ -109,10 +110,10 @@ public class BladeView extends View {
 			mPopupText = new TextView(getContext());
 			mPopupText.setBackgroundColor(Color.GRAY);
 			mPopupText.setTextColor(Color.CYAN);
-			mPopupText.setTextSize(50);
+			mPopupText.setTextSize(50);//按下的字母大小
 			mPopupText.setGravity(Gravity.CENTER_HORIZONTAL
 					| Gravity.CENTER_VERTICAL);
-			mPopupWindow = new PopupWindow(mPopupText, 100, 100);
+			mPopupWindow = new PopupWindow(mPopupText, 200, 200);//设置按下的字母的方格
 		}
 
 		String text = "";
