@@ -1,7 +1,7 @@
 ## C.
 
 
-这个是以前学习完安卓之后，心血来潮做的一个软件，用了一些gitHub上的开源UI还有一些别人的开源软件功能进行参考整合，纯粹就是一个玩玩而已的软件，可以作为学习参考吧，当时用的是eclipse开发，所以整合的难度还是比较困难的，个人觉得做的也是一般般吧。
+这个是以前学习完安卓之后，心血来潮做的一个软件，用了一些gitHub上的开源UI还有一些别人的开源软件功能进行参考整合，纯粹就是一个玩玩而已的软件，可以作为学习参考吧，当时用的是eclipse开发，所以整合还是比较困难的，个人也觉得做的也是一般般吧。
 里面的功能有：
 
 1. 随手记
@@ -62,5 +62,7 @@ gitHub：https://github.com/mxn21/FlowingDrawer
 还有一些功能就不进行截图了。
 下面给出引用的部分gitHub地址：
 https://github.com/wasabeef/awesome-android-ui
+
 https://github.com/mxn21/FlowingDrawer
+
 https://github.com/cckevincyh/Weather
