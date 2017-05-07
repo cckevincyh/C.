@@ -61,6 +61,7 @@ gitHub：https://github.com/mxn21/FlowingDrawer
 
 还有一些功能就不进行截图了。
 下面给出引用的部分gitHub地址：
+
 https://github.com/wasabeef/awesome-android-ui
 
 https://github.com/mxn21/FlowingDrawer
